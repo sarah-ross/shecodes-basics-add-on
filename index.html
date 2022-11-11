@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,700;0,800;0,900;1,400;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Traveling is my favorite hobby</title>
+		<style>
+			body {
+				margin: auto;
+				background: url("https://images.unsplash.com/photo-1417918045827-f574d241e2cc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80")
+					no-repeat center / cover;
+				backdrop-filter: blur(5px);
+				font-family: "Red Hat Display", sans-serif;
+				color: rgb(28, 53, 68);
+			}
+
+			h1,
+			h2,
+			footer,
+			.image-gallery {
+				text-align: center;
+			}
+
+			h1 {
+				font-size: 52px;
+				font-weight: 200;
+				letter-spacing: 2.5px;
+			}
+
+			h2 {
+				font-size: 28px;
+				font-weight: 600;
+			}
+
+			h3 {
+				font-size: 24px;
+			}
+
+			img {
+				width: 100%;
+				border-radius: 8px;
+				filter: grayscale(100%)
+					drop-shadow(0 10px 16px rgba(36, 30, 45, 0.347));
+				transition: all 250ms ease-in-out;
+			}
+
+			img:is(:hover, :focus) {
+				transform: scale(1.1);
+				filter: grayscale(0);
+			}
+
+			p {
+				letter-spacing: 1px;
+			}
+
+			button {
+				background: rgb(28, 53, 68);
+				color: white;
+				padding: 10px 15px;
+				border: none;
+				border-radius: 6px;
+				font-size: 14px;
+				font-weight: 400;
+				text-transform: lowercase;
+				letter-spacing: 1.75px;
+				transition: all 250ms ease-in-out;
+			}
+
+			button:is(:hover, :focus) {
+				background-color: rgba(28, 53, 68, 0.7);
+				color: white;
+				cursor: pointer;
+			}
+
+			footer {
+				color: rgb(202, 202, 225);
+				font-style: italic;
+				padding: 20px 0;
+			}
+
+			footer a {
+				color: plum;
+				text-decoration: none;
+				transition: all 200ms ease-in-out;
+			}
+
+			footer a:is(:hover, :focus) {
+				text-decoration: underline;
+			}
+
+			button,
+			.container {
+				display: block;
+				margin: 36px auto;
+			}
+
+			.theme-button {
+				margin-top: 80px;
+			}
+
+			.container {
+				width: 80%;
+				background-color: rgba(255, 255, 255, 0.7);
+				padding: 30px;
+				border-radius: 8px;
+				filter: drop-shadow(
+					0 10px 16px rgba(36, 30, 45, 0.347)
+				);
+			}
+
+			.image-gallery {
+				margin: 60px 0;
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				grid-gap: 15px;
+			}
+
+			.harpers-ferry {
+				height: 100%;
+			}
+
+			.travel-link {
+				color: teal;
+				font-weight: 600;
+				text-decoration: none;
+				transition: all 200ms ease-in-out;
+			}
+
+			.travel-link:is(:hover, :focus) {
+				text-decoration: underline;
+			}
+
+			.dark-theme {
+				background: url("https://images.unsplash.com/photo-1462007895615-c8c073bebcd8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8Y2l0eSUyMG5pZ2h0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60")
+					no-repeat center / cover;
+				color: rgb(202, 202, 225);
+			}
+
+			.dark-container {
+				background-color: rgba(16, 31, 40, 0.6);
+			}
+
+			.dark-button {
+				background-color: rgba(255, 255, 255, 0.7);
+				color: rgb(16, 31, 40);
+			}
+
+			.dark-button:is(:hover, :focus) {
+				background-color: rgb(202, 202, 225);
+				color: rgb(16, 31, 40);
+			}
+		</style>
+	</head>
+	<body>
+		<button class="theme-button">Change Theme</button>
+		<div class="container">
+			<h1>I love to travel.</h1>
+			<h2>
+				I haven't been everywhere, but it's on my list.
+			</h2>
+			<div class="image-gallery">
+				<img
+					src="https://images.unsplash.com/photo-1508009603885-50cf7c579365?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8dGhhaWxhbmR8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
+					alt="Bangkok, Thailand"
+				/>
+				<img
+					src="https://images.unsplash.com/photo-1559215683-8b7bb7d5bfcb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1973&q=80"
+					alt="Harper's Ferry, US"
+					class="harpers-ferry"
+				/>
+				<img
+					src="https://images.unsplash.com/photo-1516117172878-fd2c41f4a759?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
+					alt="Great Smoky Mountains"
+				/>
+				<img
+					src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8amFwYW58ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
+					alt="Kyoto, Japan"
+				/>
+				<img
+					src="https://images.unsplash.com/photo-1617581629397-a72507c3de9e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2FzaGluZ3RvbiUyMGRjfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+					alt="Washington DC"
+				/>
+				<img
+					src="https://images.unsplash.com/photo-1623107061821-ee462b5c7ea5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bWVzYSUyMHZlcmRlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+					alt="Mesa Verde"
+				/>
+			</div>
+			<h3>Why travel?</h3>
+			<p>
+				Travel gives us our greatest stories, our most
+				cherished memories and countless irreplaceable
+				learnings that we can choose to pay forward to
+				others. It teaches us about ourselves and each
+				other, it broadens our horizons and, just like a
+				reset button, it forces us to refocus on what really
+				matters. Travel takes us out of our comfort zones
+				and inspires us to see, taste and try new things. It
+				constantly challenges us, not only to adapt to and
+				explore new surroundings, but also to engage with
+				different people, to embrace adventures as they come
+				and to share new and meaningful experiences with
+				friends and loved ones.
+			</p>
+			<a
+				href="https://www.google.com.co/travel/flights?hl=en-CO&gl=co&gsas=1&authuser"
+				target="_blank"
+				class="travel-link"
+				>Book a Trip →</a
+			>
+		</div>
+		<footer>
+			Coded by
+			<a
+				href="https://github.com/sarah-ross"
+				target="_blank"
+				>Sarah Ross</a
+			>
+		</footer>
+		<script>
+			function changeTheme() {
+				let container =
+					document.querySelector(".container");
+				let button = document.querySelector("button");
+
+				document.body.classList.toggle("dark-theme");
+				container.classList.toggle("dark-container");
+				button.classList.toggle("dark-button");
+			}
+			let themeButton =
+				document.querySelector(".theme-button");
+			themeButton.addEventListener("click", changeTheme);
+		</script>
+	</body>
+</html>
